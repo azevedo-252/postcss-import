@@ -547,7 +547,7 @@ function addInputToPath(options) {
   if (options.from) {
     var fromDir = path.dirname(options.from)
     if (options.path.indexOf(fromDir) === -1) {
-      options.path.unshift(fromDir)
+      options.path.unshift(fromDir.substr(1))
     }
   }
 }
